@@ -1,4 +1,2 @@
-add_library(Common
-BaseApplication.cpp
-main.cpp
-)
+aux_source_directory(. LIB_COMMON)
+add_library(Common ${LIB_COMMON})
